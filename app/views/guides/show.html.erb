@@ -1,0 +1,5 @@
+<h1><%= @guide.user.first_name %></h1>
+
+<p>Specialty: <%= @guide.specialty %></p>
+
+<%= link_to "Book", new_guide_booking_path(@guide) %>
