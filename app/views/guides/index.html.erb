@@ -1,17 +1,45 @@
 
-<h1>Guides</h1>
+<h1>Find a Guide</h1>
+<div class="container">
+  <div class="row">
+    <ul>
+      <% @guides.each do |guide| %>
+      <div class="col-sm-6">
+        <li>
+          <p>Name: <%= guide.user.first_name %></p>
+          <p>Specialty: <%= guide.specialty %></p>
+          <%= link_to "Info", guide_path(guide) %>
+        </li>
+      </div>
 
-<ul>
-<% @guides.each do |guide| %>
-<div>
-  <li>
-    <p>Name: <%= guide.user.first_name %></p>
-    <p>Specialty: <%= guide.specialty %></p>
-    <%= link_to "show more", guide_path(guide) %>
-  </li>
-</div>
+      <div class="col-sm-6">
+        <li>
+          <p>Name: <%= guide.user.first_name %></p>
+          <p>Specialty: <%= guide.specialty %></p>
+          <%= link_to "Info", guide_path(guide) %>
+        </li>
+      </div>
 
-<% end %>
+      <div class="col-sm-6">
+        <li>
+          <p>Name: <%= guide.user.first_name %></p>
+          <p>Specialty: <%= guide.specialty %></p>
+          <%= link_to "Info", guide_path(guide) %>
+        </li>
+      </div>
+
+      <div class="col-sm-6">
+        <li>
+          <p>Name: <%= guide.user.first_name %></p>
+          <p>Specialty: <%= guide.specialty %></p>
+          <%= link_to "Info", guide_path(guide) %>
+        </li>
+      </div>
+
+    </div>
+  </div>
+
+  <% end %>
 </ul>
 
 
