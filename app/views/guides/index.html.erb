@@ -1,12 +1,15 @@
+
 <h1>Guides</h1>
 
 <ul>
 <% @guides.each do |guide| %>
+<div>
   <li>
     <p>Name: <%= guide.user.first_name %></p>
     <p>Specialty: <%= guide.specialty %></p>
     <%= link_to "show more", guide_path(guide) %>
   </li>
+</div>
 
 <% end %>
 </ul>
